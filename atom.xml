@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-30T11:52:07.473Z</updated>
+  <updated>2018-05-05T12:52:48.793Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,41 +17,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/04/30/hello-world/"/>
-    <id>http://yoursite.com/2018/04/30/hello-world/</id>
-    <published>2018-04-30T11:52:07.473Z</published>
-    <updated>2018-04-30T11:52:07.473Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>Unity游戏底层框架普及</title>
     <link href="http://yoursite.com/2018/04/30/intro/"/>
     <id>http://yoursite.com/2018/04/30/intro/</id>
     <published>2018-04-29T16:00:00.000Z</published>
-    <updated>2018-04-30T13:01:23.332Z</updated>
+    <updated>2018-05-05T12:52:48.793Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>Unity游戏制作底层框架需要做什么？                                                     </code></pre><h3 id="一-我为什么会写这些博客"><a href="#一-我为什么会写这些博客" class="headerlink" title="一.我为什么会写这些博客"></a>一.我为什么会写这些博客</h3><p>&emsp;&emsp;</p><h3 id="二-我的博客里会有哪些内容"><a href="#二-我的博客里会有哪些内容" class="headerlink" title="二.我的博客里会有哪些内容"></a>二.我的博客里会有哪些内容</h3>]]></content>
+    <content type="html"><![CDATA[<pre><code>Unity游戏制作底层框架-因                                                     </code></pre><h3 id="一-为什么要做这样一个框架？"><a href="#一-为什么要做这样一个框架？" class="headerlink" title="一.为什么要做这样一个框架？"></a>一.为什么要做这样一个框架？</h3><p>&emsp;&emsp;因为我比较懒，不太愿意做重复的工作。。。<br>&emsp;&emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要的团队的能力。因为在框架的机制内制作，会将游戏性能的底线拉高，性能再差也会比没有框架的游戏结构要好。</p><h3 id="二-为什么要分享出来？"><a href="#二-为什么要分享出来？" class="headerlink" title="二.为什么要分享出来？"></a>二.为什么要分享出来？</h3><p>&emsp;&emsp;这个框架在公司内已经有四款Unity项目使用了，两款线上，一款测试，一款在研，为什么我想要分享出来？&emsp;&emsp;最近两天我在看吴军的《见识》，突然觉得，总应该在能力范围内为这个社会，为愿意做游戏的同学们做点什么，让新入行的或者想要提升自己实力的兄弟姐妹们快速的达到一定的水准，也可以让使用Unity的创业团队，尤其不是有成熟的框架和项目经历的团队，更快速的更小风险的往前快速前进，努力在这个红海中活下来，把时间和精力用在做好游戏上，而不是其他上面。</p><h3 id="三-这套框架里会有什么？"><a href="#三-这套框架里会有什么？" class="headerlink" title="三.这套框架里会有什么？"></a>三.这套框架里会有什么？</h3><p>&emsp;&emsp;首先，会有一个最底层的资源管理的机制，包含了打包，加载，以及项目内特殊需求的处理方案，其次，是UI的结构化设计与管理，可以大幅度减少UI制作难度和提高管理效率，另外，还有项目的自动化设计，Avatar相关的处理，王者荣耀级别的Shader与光影处理。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;pre&gt;&lt;code&gt;Unity游戏制作底层框架需要做什么？                                                     
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一-我为什么会写这些博客&quot;&gt;&lt;a href=&quot;#一-我为什么会写这些博
+        &lt;pre&gt;&lt;code&gt;Unity游戏制作底层框架-因                                                     
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一-为什么要做这样一个框架？&quot;&gt;&lt;a href=&quot;#一-为什么要做这样一个框架
       
     
     </summary>
