@@ -8,18 +8,18 @@
   
     <meta name="keywords" content="ShawnSu,ShawnSu's Blog" />
   
-  <meta name="description" content="Unity资源管理-资源打包                                                      一.1test">
+  <meta name="description" content="Unity资源管理-资源打包                                                      一.需要完成哪些功能呢？&amp;emsp;&amp;emsp;1.自动分平台打包&amp;emsp;&amp;emsp;2.通过md5来确认是否需要打包文件&amp;emsp;&amp;emsp;3.允许单独打包不需要依赖的资源文件 二.通用代码&amp;emsp;&amp;emsp;我们需要引用几个必要的命名空间12345">
 <meta name="keywords" content="博客,资源管理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity游戏底层-资源打包">
 <meta property="og:url" content="http://yoursite.com/2018/05/06/resourcemanager_1/index.html">
 <meta property="og:site_name" content="Shawn&#39;s Blog">
-<meta property="og:description" content="Unity资源管理-资源打包                                                      一.1test">
+<meta property="og:description" content="Unity资源管理-资源打包                                                      一.需要完成哪些功能呢？&amp;emsp;&amp;emsp;1.自动分平台打包&amp;emsp;&amp;emsp;2.通过md5来确认是否需要打包文件&amp;emsp;&amp;emsp;3.允许单独打包不需要依赖的资源文件 二.通用代码&amp;emsp;&amp;emsp;我们需要引用几个必要的命名空间12345">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-06T08:43:01.181Z">
+<meta property="og:updated_time" content="2018-05-06T09:50:41.604Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity游戏底层-资源打包">
-<meta name="twitter:description" content="Unity资源管理-资源打包                                                      一.1test">
+<meta name="twitter:description" content="Unity资源管理-资源打包                                                      一.需要完成哪些功能呢？&amp;emsp;&amp;emsp;1.自动分平台打包&amp;emsp;&amp;emsp;2.通过md5来确认是否需要打包文件&amp;emsp;&amp;emsp;3.允许单独打包不需要依赖的资源文件 二.通用代码&amp;emsp;&amp;emsp;我们需要引用几个必要的命名空间12345">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -141,10 +141,12 @@
       
             
             <pre><code>Unity资源管理-资源打包                                                     
-</code></pre><h3 id="一"><a href="#一" class="headerlink" title="一."></a>一.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+</code></pre><h3 id="一-需要完成哪些功能呢？"><a href="#一-需要完成哪些功能呢？" class="headerlink" title="一.需要完成哪些功能呢？"></a>一.需要完成哪些功能呢？</h3><p>&emsp;&emsp;1.自动分平台打包<br>&emsp;&emsp;2.通过md5来确认是否需要打包文件<br>&emsp;&emsp;3.允许单独打包不需要依赖的资源文件</p>
+<h3 id="二-通用代码"><a href="#二-通用代码" class="headerlink" title="二.通用代码"></a>二.通用代码</h3><p>&emsp;&emsp;我们需要引用几个必要的命名空间<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using UnityEditor;</span><br><span class="line">using UnityEditor.SceneManagement;</span><br><span class="line">using System.Collections;</span><br><span class="line">using System.Collections.Generic;</span><br><span class="line">using System.IO;</span><br><span class="line">using System.Xml;</span><br></pre></td></tr></table></figure></p>
+
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年05月06日 16:43</p>
+        <p>最后更新： 2018年05月06日 17:50</p>
         <p>原始链接： <a class="post-url" href="/2018/05/06/resourcemanager_1/" title="Unity游戏底层-资源打包">http://yoursite.com/2018/05/06/resourcemanager_1/</a></p>
         <footer>
             <a href="http://yoursite.com">
@@ -264,7 +266,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一"><span class="post-toc-text">一.</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-需要完成哪些功能呢？"><span class="post-toc-text">一.需要完成哪些功能呢？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-通用代码"><span class="post-toc-text">二.通用代码</span></a></li></ol>
         </nav>
     </aside>
     

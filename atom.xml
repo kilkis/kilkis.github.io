@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-06T08:43:01.181Z</updated>
+  <updated>2018-05-06T09:50:41.604Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,16 +21,16 @@
     <link href="http://yoursite.com/2018/05/06/resourcemanager_1/"/>
     <id>http://yoursite.com/2018/05/06/resourcemanager_1/</id>
     <published>2018-05-05T16:00:00.000Z</published>
-    <updated>2018-05-06T08:43:01.181Z</updated>
+    <updated>2018-05-06T09:50:41.604Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>Unity资源管理-资源打包                                                     </code></pre><h3 id="一"><a href="#一" class="headerlink" title="一."></a>一.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">test</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<pre><code>Unity资源管理-资源打包                                                     </code></pre><h3 id="一-需要完成哪些功能呢？"><a href="#一-需要完成哪些功能呢？" class="headerlink" title="一.需要完成哪些功能呢？"></a>一.需要完成哪些功能呢？</h3><p>&emsp;&emsp;1.自动分平台打包<br>&emsp;&emsp;2.通过md5来确认是否需要打包文件<br>&emsp;&emsp;3.允许单独打包不需要依赖的资源文件</p><h3 id="二-通用代码"><a href="#二-通用代码" class="headerlink" title="二.通用代码"></a>二.通用代码</h3><p>&emsp;&emsp;我们需要引用几个必要的命名空间<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using UnityEditor;</span><br><span class="line">using UnityEditor.SceneManagement;</span><br><span class="line">using System.Collections;</span><br><span class="line">using System.Collections.Generic;</span><br><span class="line">using System.IO;</span><br><span class="line">using System.Xml;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;pre&gt;&lt;code&gt;Unity资源管理-资源打包                                                     
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一&quot;&gt;&lt;a href=&quot;#一&quot; class=&quot;headerlink&quot; title
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一-需要完成哪些功能呢？&quot;&gt;&lt;a href=&quot;#一-需要完成哪些功能呢？&quot; cl
       
     
     </summary>
