@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-05-05T12:52:48.793Z</updated>
+  <updated>2018-05-06T08:43:01.181Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Unity游戏底层-资源打包</title>
+    <link href="http://yoursite.com/2018/05/06/resourcemanager_1/"/>
+    <id>http://yoursite.com/2018/05/06/resourcemanager_1/</id>
+    <published>2018-05-05T16:00:00.000Z</published>
+    <updated>2018-05-06T08:43:01.181Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>Unity资源管理-资源打包                                                     </code></pre><h3 id="一"><a href="#一" class="headerlink" title="一."></a>一.</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">test</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;Unity资源管理-资源打包                                                     
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;一&quot;&gt;&lt;a href=&quot;#一&quot; class=&quot;headerlink&quot; title
+      
+    
+    </summary>
+    
+      <category term="开源项目" scheme="http://yoursite.com/categories/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="资源管理" scheme="http://yoursite.com/tags/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Unity游戏底层框架普及</title>
     <link href="http://yoursite.com/2018/04/30/intro/"/>
     <id>http://yoursite.com/2018/04/30/intro/</id>
     <published>2018-04-29T16:00:00.000Z</published>
-    <updated>2018-05-05T12:52:48.793Z</updated>
+    <updated>2018-05-05T12:57:52.544Z</updated>
     
     <content type="html"><![CDATA[<pre><code>Unity游戏制作底层框架-因                                                     </code></pre><h3 id="一-为什么要做这样一个框架？"><a href="#一-为什么要做这样一个框架？" class="headerlink" title="一.为什么要做这样一个框架？"></a>一.为什么要做这样一个框架？</h3><p>&emsp;&emsp;因为我比较懒，不太愿意做重复的工作。。。<br>&emsp;&emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要的团队的能力。因为在框架的机制内制作，会将游戏性能的底线拉高，性能再差也会比没有框架的游戏结构要好。</p><h3 id="二-为什么要分享出来？"><a href="#二-为什么要分享出来？" class="headerlink" title="二.为什么要分享出来？"></a>二.为什么要分享出来？</h3><p>&emsp;&emsp;这个框架在公司内已经有四款Unity项目使用了，两款线上，一款测试，一款在研，为什么我想要分享出来？&emsp;&emsp;最近两天我在看吴军的《见识》，突然觉得，总应该在能力范围内为这个社会，为愿意做游戏的同学们做点什么，让新入行的或者想要提升自己实力的兄弟姐妹们快速的达到一定的水准，也可以让使用Unity的创业团队，尤其不是有成熟的框架和项目经历的团队，更快速的更小风险的往前快速前进，努力在这个红海中活下来，把时间和精力用在做好游戏上，而不是其他上面。</p><h3 id="三-这套框架里会有什么？"><a href="#三-这套框架里会有什么？" class="headerlink" title="三.这套框架里会有什么？"></a>三.这套框架里会有什么？</h3><p>&emsp;&emsp;首先，会有一个最底层的资源管理的机制，包含了打包，加载，以及项目内特殊需求的处理方案，其次，是UI的结构化设计与管理，可以大幅度减少UI制作难度和提高管理效率，另外，还有项目的自动化设计，Avatar相关的处理，王者荣耀级别的Shader与光影处理。</p>]]></content>
     
