@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Unity游戏底层框架普及 | Shawn&#39;s Blog</title>
+  <title>nity Atlas格式自动化处理脚本 | Shawn&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="ShawnSu,ShawnSu's Blog" />
   
-  <meta name="description" content="Unity游戏制作底层框架-因                                                      一.为什么要做这样一个框架？&amp;emsp;&amp;emsp;因为我比较懒，不太愿意做重复的工作。。。&amp;emsp;&amp;emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要">
+  <meta name="description" content="Unity Atlas格式自动化处理脚本 一.为什么要写这个脚本？&amp;emsp;&amp;emsp;在制作游戏的过程中，策划和美术同学会在项目里上传各类图片资源，比如角色的贴图，UI的贴图，通常意义上哪怕程序同学事先写了资源的定义文档，通常他们也很难100%的完全做到，一旦有文件没有改成必要的格式和配置，在未来跑游戏的时候，就可能造成性能上的，表现上的各种问题，所以，最好的解决方法，不是教他们怎么操作，而是">
 <meta name="keywords" content="博客,介绍">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Unity游戏底层框架普及">
-<meta property="og:url" content="http://yoursite.com/2018/04/30/intro/index.html">
+<meta property="og:title" content="nity Atlas格式自动化处理脚本">
+<meta property="og:url" content="http://yoursite.com/2018/05/18/atlas/index.html">
 <meta property="og:site_name" content="Shawn&#39;s Blog">
-<meta property="og:description" content="Unity游戏制作底层框架-因                                                      一.为什么要做这样一个框架？&amp;emsp;&amp;emsp;因为我比较懒，不太愿意做重复的工作。。。&amp;emsp;&amp;emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要">
+<meta property="og:description" content="Unity Atlas格式自动化处理脚本 一.为什么要写这个脚本？&amp;emsp;&amp;emsp;在制作游戏的过程中，策划和美术同学会在项目里上传各类图片资源，比如角色的贴图，UI的贴图，通常意义上哪怕程序同学事先写了资源的定义文档，通常他们也很难100%的完全做到，一旦有文件没有改成必要的格式和配置，在未来跑游戏的时候，就可能造成性能上的，表现上的各种问题，所以，最好的解决方法，不是教他们怎么操作，而是">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-05T12:57:52.544Z">
+<meta property="og:updated_time" content="2018-05-18T13:20:21.663Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Unity游戏底层框架普及">
-<meta name="twitter:description" content="Unity游戏制作底层框架-因                                                      一.为什么要做这样一个框架？&amp;emsp;&amp;emsp;因为我比较懒，不太愿意做重复的工作。。。&amp;emsp;&amp;emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要">
+<meta name="twitter:title" content="nity Atlas格式自动化处理脚本">
+<meta name="twitter:description" content="Unity Atlas格式自动化处理脚本 一.为什么要写这个脚本？&amp;emsp;&amp;emsp;在制作游戏的过程中，策划和美术同学会在项目里上传各类图片资源，比如角色的贴图，UI的贴图，通常意义上哪怕程序同学事先写了资源的定义文档，通常他们也很难100%的完全做到，一旦有文件没有改成必要的格式和配置，在未来跑游戏的时候，就可能造成性能上的，表现上的各种问题，所以，最好的解决方法，不是教他们怎么操作，而是">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -104,14 +104,14 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-intro" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-atlas" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      Unity游戏底层框架普及
+      nity Atlas格式自动化处理脚本
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -124,7 +124,7 @@
               </li>
           
         <li>
-          <i class="fa fa-calendar"></i>  2018-04-30
+          <i class="fa fa-calendar"></i>  2018-05-18
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -140,15 +140,20 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <pre><code>Unity游戏制作底层框架-因                                                     
-</code></pre><h3 id="一-为什么要做这样一个框架？"><a href="#一-为什么要做这样一个框架？" class="headerlink" title="一.为什么要做这样一个框架？"></a>一.为什么要做这样一个框架？</h3><p>&emsp;&emsp;因为我比较懒，不太愿意做重复的工作。。。<br>&emsp;&emsp;然后一个好的框架，可以节省两个方面的消耗：一个是团队内程序上手的时间，以及制作相应功能消耗的时间，另一个则是可以节省后期游戏优化所消耗的时间和需要的团队的能力。因为在框架的机制内制作，会将游戏性能的底线拉高，性能再差也会比没有框架的游戏结构要好。</p>
-<h3 id="二-为什么要分享出来？"><a href="#二-为什么要分享出来？" class="headerlink" title="二.为什么要分享出来？"></a>二.为什么要分享出来？</h3><p>&emsp;&emsp;这个框架在公司内已经有四款Unity项目使用了，两款线上，一款测试，一款在研，为什么我想要分享出来？&emsp;&emsp;最近两天我在看吴军的《见识》，突然觉得，总应该在能力范围内为这个社会，为愿意做游戏的同学们做点什么，让新入行的或者想要提升自己实力的兄弟姐妹们快速的达到一定的水准，也可以让使用Unity的创业团队，尤其不是有成熟的框架和项目经历的团队，更快速的更小风险的往前快速前进，努力在这个红海中活下来，把时间和精力用在做好游戏上，而不是其他上面。</p>
-<h3 id="三-这套框架里会有什么？"><a href="#三-这套框架里会有什么？" class="headerlink" title="三.这套框架里会有什么？"></a>三.这套框架里会有什么？</h3><p>&emsp;&emsp;首先，会有一个最底层的资源管理的机制，包含了打包，加载，以及项目内特殊需求的处理方案，其次，是UI的结构化设计与管理，可以大幅度减少UI制作难度和提高管理效率，另外，还有项目的自动化设计，Avatar相关的处理，王者荣耀级别的Shader与光影处理。</p>
+            <pre><code>Unity Atlas格式自动化处理脚本
+</code></pre><h3 id="一-为什么要写这个脚本？"><a href="#一-为什么要写这个脚本？" class="headerlink" title="一.为什么要写这个脚本？"></a>一.为什么要写这个脚本？</h3><p>&emsp;&emsp;在制作游戏的过程中，策划和美术同学会在项目里上传各类图片资源，比如角色的贴图，UI的贴图，通常意义上哪怕程序同学事先写了资源的定义文档，通常他们也很难100%的完全做到，一旦有文件没有改成必要的格式和配置，在未来跑游戏的时候，就可能造成性能上的，表现上的各种问题，所以，最好的解决方法，不是教他们怎么操作，而是自动帮他们做好！</p>
+<h3 id="二-解决方案"><a href="#二-解决方案" class="headerlink" title="二.解决方案"></a>二.解决方案</h3><p>&emsp;&emsp;1.写一个脚本<br>&emsp;&emsp;首先，我们在项目的Editor目录下建一个脚本，因为这个功能工作在图片进入项目的时刻，所以属于编辑器模式下,需要使用命名空间UnityEditor。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">using UnityEngine;</span><br><span class="line">using UnityEditior;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;然后，想要在图片进入Editor的时候处理，就需要继承AssetPostprocessor类，这样就会有个OnPreprocessTexture()的接口可以继承<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class TextureImportSetting : AssetPostprocessor &#123;</span><br><span class="line">&#123;</span><br><span class="line">	void OnPreprocessTexture()</span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;在这个函数内，我们可以对图片的信息进行处理，使用this.assetPath来区分图片的目录，以达到设定不同属性的目的,比如这里我们来处理UI的贴图格式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>( this.assetPath.Contains(<span class="string">"Atlas"</span>))</span><br><span class="line">&#123;</span><br><span class="line">	TextureImporter importer = (TextureImporter)assetImporter;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;UI的贴图通常需要设置成Sprite格式，mipmap是不需要的，默认的SpriteImportMode设为Single即可，有需要则按需在制作过程中程序手动修改<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">importer.textureType = TextureImporterType.Sprite; // 设置为Sprite类型</span><br><span class="line">importer.mipmapEnabled = <span class="literal">false</span>; // 禁用mipmap</span><br><span class="line">importer.spriteImportMode = SpriteImportMode.Single;</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;重点！敲黑板！总所周知，Unity的Ugui使用的Atlas机制，atlas打包是需要设定packingTag的，在这里，我们之前设计项目目录的好处就来了，这里可以直接设定atlas贴图的packingTag，这样unity就会自动将他们按照目录生成在一张贴图上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string[] tmp = this.assetPath.Split(<span class="string">'/'</span>);</span><br><span class="line">importer.spritePackingTag = tmp[tmp.Length - 2];</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;然后，我们可以根据平台进行平台定制化的设定，这样在切换平台后，设定就不需要修改了<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">TextureImporterPlatformSettings textureSettings = new TextureImporterPlatformSettings();</span><br><span class="line">//允许覆盖设置</span><br><span class="line">textureSettings.overridden = <span class="literal">true</span>;</span><br><span class="line">//安卓平台的设置</span><br><span class="line">textureSettings.name = <span class="string">"Android"</span>;</span><br><span class="line">//最大贴图大小只允许1024</span><br><span class="line">textureSettings.maxTextureSize = 1024;</span><br><span class="line">//贴图格式设置为ETC_RGB4</span><br><span class="line">textureSettings.format = TextureImporterFormat.ETC_RGB4;</span><br><span class="line">//这顶压缩品质</span><br><span class="line">textureSettings.compressionQuality = 50;</span><br><span class="line">//允许自动将alpha通道分离</span><br><span class="line">textureSettings.allowsAlphaSplitting = <span class="literal">true</span>;</span><br><span class="line">//将平台设置配置进去</span><br><span class="line">importer.SetPlatformTextureSettings(textureSettings);</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;最后，有个很好用的函数OnPostprocessAllAssets，他会在所有资源被导入、删除、移动完成之后调用，可以在这个函数里用来进行一些资源命名判定，比如大小写之类的，这样可以在资源变化的时候就确保命名的正确性，避免未来因为名称的问题而出现资源加载问题！</p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年05月05日 20:57</p>
-        <p>原始链接： <a class="post-url" href="/2018/04/30/intro/" title="Unity游戏底层框架普及">http://yoursite.com/2018/04/30/intro/</a></p>
+        <p>最后更新： 2018年05月18日 21:20</p>
+        <p>原始链接： <a class="post-url" href="/2018/05/18/atlas/" title="nity Atlas格式自动化处理脚本">http://yoursite.com/2018/05/18/atlas/</a></p>
         <footer>
             <a href="http://yoursite.com">
                 <img src="/images/logo.png" alt="Shawn">
@@ -205,7 +210,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/04/30/intro/&title=《Unity游戏底层框架普及》 — Shawn's Blog&pic=http://oerolc7og.bkt.clouddn.com/images/miho/theme/github-second.jpg" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/05/18/atlas/&title=《nity Atlas格式自动化处理脚本》 — Shawn's Blog&pic=http://oerolc7og.bkt.clouddn.com/images/miho/theme/github-second.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -215,22 +220,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/04/30/intro/&title=《Unity游戏底层框架普及》 — Shawn's Blog&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/05/18/atlas/&title=《nity Atlas格式自动化处理脚本》 — Shawn's Blog&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/04/30/intro/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/05/18/atlas/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Unity游戏底层框架普及》 — Shawn's Blog&url=http://yoursite.com/2018/04/30/intro/&via=http://yoursite.com" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《nity Atlas格式自动化处理脚本》 — Shawn's Blog&url=http://yoursite.com/2018/05/18/atlas/&via=http://yoursite.com" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/04/30/intro/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/05/18/atlas/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -240,7 +245,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2018/04/30/intro/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2018/05/18/atlas/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -267,23 +272,18 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-为什么要做这样一个框架？"><span class="post-toc-text">一.为什么要做这样一个框架？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-为什么要分享出来？"><span class="post-toc-text">二.为什么要分享出来？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#三-这套框架里会有什么？"><span class="post-toc-text">三.这套框架里会有什么？</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一-为什么要写这个脚本？"><span class="post-toc-text">一.为什么要写这个脚本？</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#二-解决方案"><span class="post-toc-text">二.解决方案</span></a></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
-    <a href="/2018/05/06/resourcemanager_1/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          Unity游戏底层-资源打包
-        
-      </span>
-    </a>
   
+    <a href="/2018/05/11/unitydir/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Unity游戏项目目录设计</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
   
 </nav>
 
